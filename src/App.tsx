@@ -12,8 +12,8 @@ export default function App() {
       <Nav />
       <main style={{ padding: '40px 24px', maxWidth: 1200, margin: '0 auto' }}>
         <Routes>
-          <Route path="/" element={<Distribution />} />
-          <Route path="/explorer" element={<Explorer />} />
+          <Route path="/" element={<Explorer />} />
+          <Route path="/breakdown" element={<Distribution />} />
           <Route path="/outlets" element={<Outlets />} />
           <Route path="/stats" element={<Stats />} />
           <Route path="/teams" element={<Teams />} />

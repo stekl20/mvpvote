@@ -165,7 +165,7 @@ export default function VoterTable() {
         <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
           <thead>
             <tr style={{ borderBottom: '1px solid var(--border)' }}>
-              {['Name', 'Outlet', 'Type', 'Location', 'MVP #1', 'MVP #2', 'MVP #3'].map(h => (
+              {['Name', 'Outlet', 'Type', 'Location', 'MVP #1', 'MVP #2', 'MVP #3', ''].map(h => (
                 <th key={h} style={{ padding: '10px 12px', textAlign: 'left', color: 'var(--text-secondary)', fontSize: 11, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em' }}>
                   {h}
                 </th>
@@ -208,11 +208,14 @@ export default function VoterTable() {
                     <td style={{ padding: '10px 12px', color: 'var(--rank-1)', fontWeight: 600 }}>{mvp?.first ?? '—'}</td>
                     <td style={{ padding: '10px 12px', color: 'var(--rank-2)' }}>{mvp?.second ?? '—'}</td>
                     <td style={{ padding: '10px 12px', color: 'var(--rank-3)' }}>{mvp?.third ?? '—'}</td>
+                    <td style={{ padding: '10px 12px', color: 'var(--text-secondary)', fontSize: 12, textAlign: 'right' }}>
+                      {isExpanded ? '▲' : '▼'}
+                    </td>
                   </tr>
                   <AnimatePresence>
                     {isExpanded && (
                       <tr key={`${voter.id}-expanded`}>
-                        <td colSpan={7} style={{ padding: 0 }}>
+                        <td colSpan={8} style={{ padding: 0 }}>
                           <motion.div
                             initial={{ height: 0, opacity: 0 }}
                             animate={{ height: 'auto', opacity: 1 }}
