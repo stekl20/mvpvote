@@ -7,7 +7,6 @@ const links = [
   { to: '/outlets', label: 'Outlet Analysis' },
   { to: '/teams', label: 'Team Awards' },
   { to: '/stats', label: 'Stats vs Votes' },
-  { to: '/map', label: 'Geography' },
 ];
 
 export default function Nav() {

@@ -5,7 +5,6 @@ import Distribution from './pages/Distribution';
 import Explorer from './pages/Explorer';
 import Outlets from './pages/Outlets';
 import Stats from './pages/Stats';
-import Map from './pages/Map';
 import Teams from './pages/Teams';
 
 export default function App() {
@@ -19,7 +18,6 @@ export default function App() {
           <Route path="/explorer" element={<Explorer />} />
           <Route path="/outlets" element={<Outlets />} />
           <Route path="/stats" element={<Stats />} />
-          <Route path="/map" element={<Map />} />
           <Route path="/teams" element={<Teams />} />
         </Routes>
       </main>
