@@ -1,10 +1,8 @@
 import { NavLink } from 'react-router-dom';
 
 const links = [
-  { to: '/', label: 'Overview' },
-  { to: '/distribution', label: 'Vote Breakdown' },
   { to: '/explorer', label: 'Voter Explorer' },
-  { to: '/outlets', label: 'Outlet Analysis' },
+  { to: '/', label: 'Vote Breakdown' },
   { to: '/teams', label: 'Team Awards' },
   { to: '/stats', label: 'Stats vs Votes' },
 ];

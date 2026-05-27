@@ -11,16 +11,6 @@ type Voter = typeof voters[0];
 
 const OUTLET_CATS = ['national', 'local', 'international', 'podcast/independent'];
 
-const PLAYER_TEAMS: Record<string, string> = {
-  SGA: 'OKC', Jokic: 'DEN', Wembanyama: 'SAS', Cunningham: 'DET', Luka: 'DAL', JBrown: 'BOS',
-};
-
-const COACH_TEAMS: Record<string, string> = {
-  Mazzulla: 'BOS', Bickerstaff: 'BKN', MJohnson: 'PHX',
-  CLee: 'GSW', JOtt: 'NOP', Daigneault: 'OKC',
-  Tiago: 'MIL', JRedick: 'LAL', DRajakovic: 'TOR',
-  KAtkinson: 'CLE', TLue: 'LAC', QSnyder: 'ATL',
-};
 
 function getBallot(voterId: string) {
   const mvp = mvpBallots.find(b => b.voter_id === voterId);
@@ -54,32 +44,13 @@ export default function VoterTable() {
   const [search, setSearch] = useState('');
   const [selectedCats, setSelectedCats] = useState<string[]>([]);
   const [selectedMarket, setSelectedMarket] = useState('');
-  const [selectedMvpPick, setSelectedMvpPick] = useState('');
-  const [selectedCoyPick, setSelectedCoyPick] = useState('');
   const [sortBy, setSortBy] = useState<'name' | 'outlet'>('name');
   const [expanded, setExpanded] = useState<string | null>(null);
+  const [filtersOpen, setFiltersOpen] = useState(true);
 
   const markets = useMemo(() => {
     const m = [...new Set(voters.map(v => v.nba_team_affiliation).filter(Boolean))].sort();
     return m as string[];
-  }, []);
-
-  const mvpCandidates = useMemo(() => {
-    const picks = [...new Set(mvpBallots.map(b => b.first))].sort((a, b) => {
-      const ca = mvpBallots.filter(x => x.first === a).length;
-      const cb = mvpBallots.filter(x => x.first === b).length;
-      return cb - ca;
-    });
-    return picks;
-  }, []);
-
-  const coyCandidates = useMemo(() => {
-    const picks = [...new Set(coyBallots.map(b => b.first))].sort((a, b) => {
-      const ca = coyBallots.filter(x => x.first === a).length;
-      const cb = coyBallots.filter(x => x.first === b).length;
-      return cb - ca;
-    });
-    return picks;
   }, []);
 
   const filtered = useMemo(() => {
@@ -88,21 +59,13 @@ export default function VoterTable() {
         if (search && !v.name.toLowerCase().includes(search.toLowerCase()) && !v.outlet.toLowerCase().includes(search.toLowerCase())) return false;
         if (selectedCats.length > 0 && !selectedCats.includes(v.outlet_category)) return false;
         if (selectedMarket && v.nba_team_affiliation !== selectedMarket) return false;
-        if (selectedMvpPick) {
-          const mvp = mvpBallots.find(b => b.voter_id === v.id);
-          if (mvp?.first !== selectedMvpPick) return false;
-        }
-        if (selectedCoyPick) {
-          const coy = coyBallots.find(b => b.voter_id === v.id);
-          if (coy?.first !== selectedCoyPick) return false;
-        }
         return true;
       })
       .sort((a, b) => {
         if (sortBy === 'name') return a.name.localeCompare(b.name);
         return a.outlet.localeCompare(b.outlet);
       });
-  }, [search, selectedCats, selectedMarket, selectedMvpPick, selectedCoyPick, sortBy]);
+  }, [search, selectedCats, selectedMarket, sortBy]);
 
   function toggleCat(cat: string) {
     setSelectedCats(prev => prev.includes(cat) ? prev.filter(c => c !== cat) : [...prev, cat]);
@@ -116,11 +79,18 @@ export default function VoterTable() {
   };
 
   return (
-    <div className="flex gap-6">
+    <div className="voter-layout flex gap-6">
       {/* Sidebar */}
-      <aside style={{ width: 220, flexShrink: 0 }}>
-        <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 10, padding: 16 }}>
-          <p style={{ color: 'var(--text-secondary)', fontSize: 11, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 12 }}>
+      <aside className="voter-sidebar" style={{ width: 220, flexShrink: 0 }}>
+        <button
+          className="voter-filter-toggle"
+          onClick={() => setFiltersOpen(o => !o)}
+          style={{ display: 'none', width: '100%', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 8, padding: '10px 14px', color: 'var(--text-primary)', fontSize: 13, cursor: 'pointer', fontWeight: 600, marginBottom: 8, textAlign: 'left' }}
+        >
+          Filters {filtersOpen ? '▲' : '▼'}
+        </button>
+        {filtersOpen && <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 10, padding: 16 }}>
+          <p className="hide-on-mobile" style={{ color: 'var(--text-secondary)', fontSize: 11, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 12 }}>
             Filters
           </p>
 
@@ -150,52 +120,6 @@ export default function VoterTable() {
             </label>
           ))}
 
-          <p style={{ color: 'var(--text-secondary)', fontSize: 11, marginBottom: 8, marginTop: 16 }}>MVP #1 pick</p>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 4 }}>
-            {mvpCandidates.map(player => {
-              const count = mvpBallots.filter(b => b.first === player).length;
-              const active = selectedMvpPick === player;
-              return (
-                <button
-                  key={player}
-                  onClick={() => setSelectedMvpPick(active ? '' : player)}
-                  style={{
-                    background: active ? 'var(--accent)' : 'var(--bg)',
-                    color: active ? 'var(--bg)' : 'var(--text-primary)',
-                    border: `1px solid ${active ? 'var(--accent)' : 'var(--border)'}`,
-                    borderRadius: 20, padding: '3px 9px', fontSize: 12, cursor: 'pointer',
-                    fontWeight: active ? 700 : 400,
-                  }}
-                >
-                  {PLAYER_TEAMS[player] ?? player} <span style={{ opacity: 0.7, fontSize: 11 }}>({count})</span>
-                </button>
-              );
-            })}
-          </div>
-
-          <p style={{ color: 'var(--text-secondary)', fontSize: 11, marginBottom: 8, marginTop: 16 }}>COY #1 pick</p>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 4 }}>
-            {coyCandidates.map(coach => {
-              const count = coyBallots.filter(b => b.first === coach).length;
-              const active = selectedCoyPick === coach;
-              return (
-                <button
-                  key={coach}
-                  onClick={() => setSelectedCoyPick(active ? '' : coach)}
-                  style={{
-                    background: active ? 'var(--highlight)' : 'var(--bg)',
-                    color: active ? '#0a0a0f' : 'var(--text-primary)',
-                    border: `1px solid ${active ? 'var(--highlight)' : 'var(--border)'}`,
-                    borderRadius: 20, padding: '3px 9px', fontSize: 12, cursor: 'pointer',
-                    fontWeight: active ? 700 : 400,
-                  }}
-                >
-                  {COACH_TEAMS[coach] ?? coach} <span style={{ opacity: 0.7, fontSize: 11 }}>({count})</span>
-                </button>
-              );
-            })}
-          </div>
-
           <p style={{ color: 'var(--text-secondary)', fontSize: 11, marginBottom: 8, marginTop: 16 }}>NBA market (voter's beat)</p>
           <select
             value={selectedMarket}
@@ -220,7 +144,7 @@ export default function VoterTable() {
           <div style={{ marginTop: 16, paddingTop: 12, borderTop: '1px solid var(--border)', color: 'var(--text-secondary)', fontSize: 12 }}>
             N = {filtered.length} voters
           </div>
-        </div>
+        </div>}
       </aside>
 
       {/* Table */}

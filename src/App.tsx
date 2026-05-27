@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
-import Overview from './pages/Overview';
 import Distribution from './pages/Distribution';
 import Explorer from './pages/Explorer';
 import Outlets from './pages/Outlets';
@@ -13,8 +12,7 @@ export default function App() {
       <Nav />
       <main style={{ padding: '40px 24px', maxWidth: 1200, margin: '0 auto' }}>
         <Routes>
-          <Route path="/" element={<Overview />} />
-          <Route path="/distribution" element={<Distribution />} />
+          <Route path="/" element={<Distribution />} />
           <Route path="/explorer" element={<Explorer />} />
           <Route path="/outlets" element={<Outlets />} />
           <Route path="/stats" element={<Stats />} />

@@ -48,3 +48,26 @@ html, body, #root {
 }
 
 .fade-in { animation: fadeIn 0.35s ease forwards; }
+
+@media (max-width: 640px) {
+  /* Reduce page padding */
+  main { padding: 20px 14px !important; }
+
+  /* Page titles */
+  h1 { font-size: 22px !important; }
+
+  /* Voter Explorer layout: stack sidebar above table */
+  .voter-layout { flex-direction: column !important; gap: 12px !important; }
+  .voter-sidebar { width: 100% !important; }
+  .voter-filter-toggle { display: block !important; }
+  .hide-on-mobile { display: none !important; }
+
+  /* Card grids: single column */
+  .stats-grid { grid-template-columns: 1fr !important; }
+
+  /* Scatter chart: shorter on mobile */
+  .recharts-wrapper { height: 300px !important; }
+
+  /* Nav brand text smaller */
+  nav span[style*="monospace"] { font-size: 12px !important; margin-right: 12px !important; }
+}
