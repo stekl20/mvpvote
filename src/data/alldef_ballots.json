@@ -1,0 +1,1702 @@
+[
+  {
+    "voter_id": "aldridge",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "SBarnes",
+      "DDaniels",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "amick",
+    "first": [
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "OGAnunoby",
+      "DGreen",
+      "AmenThompson",
+      "CWallace",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "j_anderson",
+    "first": [
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "DDaniels",
+      "AmenThompson",
+      "AThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "aschburner",
+    "first": [
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "OGAnunoby",
+      "TCamara",
+      "DGreen",
+      "EMobley",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "aubin",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "SBarnes",
+      "AmenThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "barry",
+    "first": [
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "KDunn",
+      "CWallace",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "beck",
+    "first": [
+      "SBarnes",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "OGAnunoby",
+      "DDaniels",
+      "KDunn",
+      "Gobert",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "beede",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "SBarnes",
+      "DGreen",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "bontemps",
+    "first": [
+      "OGAnunoby",
+      "Gobert",
+      "Holmgren",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "SBarnes",
+      "TCamara",
+      "NQueta",
+      "AThompson"
+    ]
+  },
+  {
+    "voter_id": "boone",
+    "first": [
+      "OGAnunoby",
+      "DDaniels",
+      "Kawhi",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "BAdebayo",
+      "SBarnes",
+      "DGreen",
+      "CWallace",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "broussard",
+    "first": [
+      "SBarnes",
+      "Holmgren",
+      "AThompson",
+      "CWallace",
+      "Wembanyama"
+    ],
+    "second": [
+      "BAdebayo",
+      "DDaniels",
+      "Gobert",
+      "AmenThompson",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "bucher",
+    "first": [
+      "OGAnunoby",
+      "SBarnes",
+      "Holmgren",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "SCastle",
+      "Gobert",
+      "DGreen",
+      "AThompson"
+    ]
+  },
+  {
+    "voter_id": "candeias",
+    "first": [
+      "Holmgren",
+      "AThompson",
+      "CWallace",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "SBarnes",
+      "SCastle",
+      "DDaniels",
+      "SGA",
+      "Gobert"
+    ]
+  },
+  {
+    "voter_id": "chiang",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "SBarnes",
+      "KDunn",
+      "AmenThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "chinellato",
+    "first": [
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "DDaniels",
+      "LDort",
+      "AThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "cole",
+    "first": [
+      "BAdebayo",
+      "SCastle",
+      "Gobert",
+      "Holmgren",
+      "Wembanyama"
+    ],
+    "second": [
+      "DDaniels",
+      "EMobley",
+      "AThompson",
+      "CWallace",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "curtis",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "SBarnes",
+      "TCamara",
+      "SCastle",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "daimiel",
+    "first": [
+      "Holmgren",
+      "AThompson",
+      "CWallace",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "OGAnunoby",
+      "SBarnes",
+      "JBrown",
+      "JDuren",
+      "AmenThompson"
+    ]
+  },
+  {
+    "voter_id": "c_davis",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "CWallace",
+      "Wembanyama"
+    ],
+    "second": [
+      "SBarnes",
+      "TCamara",
+      "NQueta",
+      "AmenThompson",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "de_lune",
+    "first": [
+      "Holmgren",
+      "AThompson",
+      "CWallace",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "SBarnes",
+      "SCastle",
+      "Gobert"
+    ]
+  },
+  {
+    "voter_id": "devine",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "SBarnes",
+      "SCastle",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "durando",
+    "first": [
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "OGAnunoby",
+      "SCastle",
+      "AmenThompson",
+      "CWallace",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "j_edwards",
+    "first": [
+      "OGAnunoby",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "SBarnes",
+      "KDunn",
+      "Gobert",
+      "AmenThompson"
+    ]
+  },
+  {
+    "voter_id": "fedor",
+    "first": [
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "DDaniels",
+      "CWallace",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "geltzeiler",
+    "first": [
+      "OGAnunoby",
+      "Holmgren",
+      "AThompson",
+      "CWallace",
+      "Wembanyama"
+    ],
+    "second": [
+      "SBarnes",
+      "SCastle",
+      "DDaniels",
+      "JDuren",
+      "Gobert"
+    ]
+  },
+  {
+    "voter_id": "george",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "SBarnes",
+      "SCastle",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "goldsberry",
+    "first": [
+      "DDaniels",
+      "Gobert",
+      "Holmgren",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "SCastle",
+      "AmenThompson",
+      "AThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "golliver",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "SBarnes",
+      "SCastle",
+      "KDunn",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "goodwill",
+    "first": [
+      "OGAnunoby",
+      "SCastle",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "BAdebayo",
+      "TCamara",
+      "Gobert",
+      "DGreen",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "grange",
+    "first": [
+      "SBarnes",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "OGAnunoby",
+      "TCamara",
+      "SCastle",
+      "Gobert",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "gremmel",
+    "first": [
+      "DDaniels",
+      "NQueta",
+      "AThompson",
+      "CWallace",
+      "Wembanyama"
+    ],
+    "second": [
+      "SCastle",
+      "Gobert",
+      "DGreen",
+      "Holmgren",
+      "JSmith"
+    ]
+  },
+  {
+    "voter_id": "guillory",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "SBarnes",
+      "SCastle",
+      "AmenThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "harper",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "SBarnes",
+      "TCamara",
+      "DGreen",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "haynes",
+    "first": [
+      "SBarnes",
+      "SCastle",
+      "DGreen",
+      "Holmgren",
+      "Wembanyama"
+    ],
+    "second": [
+      "BAdebayo",
+      "TCamara",
+      "DDaniels",
+      "AThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "helin",
+    "first": [
+      "BAdebayo",
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "OGAnunoby",
+      "SBarnes",
+      "DDaniels",
+      "CWallace",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "herbert",
+    "first": [
+      "SBarnes",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "SCastle",
+      "Gobert",
+      "AmenThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "hightower",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "SBarnes",
+      "SCastle",
+      "KDunn",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "himmelsbach",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "SBarnes",
+      "TCamara",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "holmes",
+    "first": [
+      "SBarnes",
+      "DGreen",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "BAdebayo",
+      "DDaniels",
+      "Gobert",
+      "CWallace",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "iko",
+    "first": [
+      "BAdebayo",
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "SBarnes",
+      "SCastle",
+      "AmenThompson",
+      "CWallace",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "isola",
+    "first": [
+      "DDaniels",
+      "LDort",
+      "JDuren",
+      "AmenThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "TCamara",
+      "Gobert",
+      "DGreen",
+      "Kawhi",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "jefferson",
+    "first": [
+      "OGAnunoby",
+      "DDaniels",
+      "AmenThompson",
+      "CWallace",
+      "Wembanyama"
+    ],
+    "second": [
+      "JBrown",
+      "LDort",
+      "Holmgren",
+      "AThompson",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "e_johnson",
+    "first": [
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "OGAnunoby",
+      "DDaniels",
+      "DGreen",
+      "AmenThompson",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "t_jones",
+    "first": [
+      "SBarnes",
+      "Gobert",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "TCamara",
+      "Holmgren",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "katz",
+    "first": [
+      "OGAnunoby",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "SBarnes",
+      "SCastle",
+      "Gobert",
+      "AmenThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "kestecher",
+    "first": [
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "DGreen",
+      "AThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "kotzias",
+    "first": [
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "OGAnunoby",
+      "DDaniels",
+      "LDort",
+      "EMobley",
+      "AmenThompson"
+    ]
+  },
+  {
+    "voter_id": "legler",
+    "first": [
+      "Holmgren",
+      "AThompson",
+      "CWallace",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "SBarnes",
+      "TCamara",
+      "DDaniels",
+      "Gobert",
+      "DGreen"
+    ]
+  },
+  {
+    "voter_id": "mahoney",
+    "first": [
+      "BAdebayo",
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "Wembanyama"
+    ],
+    "second": [
+      "OGAnunoby",
+      "SCastle",
+      "AThompson",
+      "CWallace",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "mannix",
+    "first": [
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "JBrown",
+      "SCastle",
+      "DGreen",
+      "AmenThompson",
+      "AThompson"
+    ]
+  },
+  {
+    "voter_id": "martinez_christensen",
+    "first": [
+      "SBarnes",
+      "TCamara",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "BAdebayo",
+      "JDuren",
+      "jaden mcdaniels",
+      "AmenThompson",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "mcdonald",
+    "first": [
+      "SCastle",
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "SBarnes",
+      "DDaniels",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "mcgehee",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AmenThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "OGAnunoby",
+      "SBarnes",
+      "SCastle",
+      "LDort",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "mcmenamin",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "SBarnes",
+      "SCastle",
+      "DGreen",
+      "NQueta",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "meng",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "SBarnes",
+      "DDaniels",
+      "AmenThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "miyaji",
+    "first": [
+      "BAdebayo",
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "OGAnunoby",
+      "SBarnes",
+      "DDaniels",
+      "DGreen",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "modai",
+    "first": [
+      "SBarnes",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "TCamara",
+      "SCastle",
+      "DDaniels",
+      "Gobert",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "murray",
+    "first": [
+      "SBarnes",
+      "Holmgren",
+      "AThompson",
+      "CWallace",
+      "Wembanyama"
+    ],
+    "second": [
+      "DDaniels",
+      "KDunn",
+      "Gobert",
+      "Kawhi",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "nichols",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "CWallace",
+      "Wembanyama"
+    ],
+    "second": [
+      "OGAnunoby",
+      "SCastle",
+      "DDaniels",
+      "DGreen",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "oconnor",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "OGAnunoby",
+      "SBarnes",
+      "DDaniels",
+      "AmenThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "owczarski",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "SBarnes",
+      "DDaniels",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "parker",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "SBarnes",
+      "SCastle",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "pasch",
+    "first": [
+      "DDaniels",
+      "Holmgren",
+      "AThompson",
+      "CWallace",
+      "Wembanyama"
+    ],
+    "second": [
+      "SBarnes",
+      "Gobert",
+      "EMobley",
+      "AmenThompson",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "perkins",
+    "first": [
+      "SBarnes",
+      "JBrown",
+      "DGreen",
+      "Holmgren",
+      "Wembanyama"
+    ],
+    "second": [
+      "SCastle",
+      "Gobert",
+      "AmenThompson",
+      "CWallace",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "pina",
+    "first": [
+      "SBarnes",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "SCastle",
+      "KDunn",
+      "Gobert",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "poe",
+    "first": [
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "BAdebayo",
+      "KDunn",
+      "AmenThompson",
+      "CWallace",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "pompey",
+    "first": [
+      "OGAnunoby",
+      "Gobert",
+      "Holmgren",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "SBarnes",
+      "TCamara",
+      "DDaniels",
+      "AThompson"
+    ]
+  },
+  {
+    "voter_id": "powell",
+    "first": [
+      "Gobert",
+      "DGreen",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "SBarnes",
+      "donovan clingan",
+      "DDaniels",
+      "EMobley",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "price",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "SBarnes",
+      "DDaniels",
+      "AmenThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "quick",
+    "first": [
+      "SBarnes",
+      "TCamara",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "OGAnunoby",
+      "DDaniels",
+      "LDort",
+      "Gobert",
+      "AmenThompson"
+    ]
+  },
+  {
+    "voter_id": "rankin",
+    "first": [
+      "TCamara",
+      "Gobert",
+      "Holmgren",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "SBarnes",
+      "NQueta",
+      "AThompson"
+    ]
+  },
+  {
+    "voter_id": "reverchon",
+    "first": [
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "OGAnunoby",
+      "TCamara",
+      "DDaniels",
+      "CWallace",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "reyes",
+    "first": [
+      "BAdebayo",
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "Wembanyama"
+    ],
+    "second": [
+      "DGreen",
+      "NQueta",
+      "AmenThompson",
+      "CWallace",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "reynolds",
+    "first": [
+      "BAdebayo",
+      "Gobert",
+      "DGreen",
+      "Holmgren",
+      "Wembanyama"
+    ],
+    "second": [
+      "OGAnunoby",
+      "SBarnes",
+      "TCamara",
+      "AThompson",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "rieke",
+    "first": [
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "BAdebayo",
+      "SCastle",
+      "EMobley",
+      "CWallace",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "robbins",
+    "first": [
+      "SBarnes",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "OGAnunoby",
+      "TCamara",
+      "KDunn",
+      "Gobert",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "rohlin",
+    "first": [
+      "BAdebayo",
+      "Gobert",
+      "Holmgren",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "OGAnunoby",
+      "KDunn",
+      "DGreen",
+      "EMobley",
+      "AThompson"
+    ]
+  },
+  {
+    "voter_id": "rooks",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "SBarnes",
+      "DGreen",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "russillo",
+    "first": [
+      "TCamara",
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "OGAnunoby",
+      "SBarnes",
+      "SCastle",
+      "AmenThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "sandri",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "SBarnes",
+      "LDort",
+      "jaden mcdaniels"
+    ]
+  },
+  {
+    "voter_id": "schuhmann",
+    "first": [
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "OGAnunoby",
+      "DDaniels",
+      "NQueta",
+      "AThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "sedano",
+    "first": [
+      "SBarnes",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "TCamara",
+      "SCastle",
+      "Gobert",
+      "DGreen"
+    ]
+  },
+  {
+    "voter_id": "shelburne",
+    "first": [
+      "SBarnes",
+      "DDaniels",
+      "Holmgren",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "SCastle",
+      "LDort",
+      "DGreen",
+      "AThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "simmons",
+    "first": [
+      "SCastle",
+      "Holmgren",
+      "AThompson",
+      "CWallace",
+      "Wembanyama"
+    ],
+    "second": [
+      "OGAnunoby",
+      "SBarnes",
+      "Gobert",
+      "AmenThompson",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "slater",
+    "first": [
+      "BAdebayo",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "SBarnes",
+      "DGreen",
+      "EMobley",
+      "AmenThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "d_smith",
+    "first": [
+      "SBarnes",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "DDaniels",
+      "KDunn",
+      "Gobert",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "sa_smith",
+    "first": [
+      "JBrown",
+      "JDuren",
+      "Gobert",
+      "Holmgren",
+      "Wembanyama"
+    ],
+    "second": [
+      "LDort",
+      "DGreen",
+      "Kawhi",
+      "AmenThompson",
+      "AThompson"
+    ]
+  },
+  {
+    "voter_id": "suzuki",
+    "first": [
+      "OGAnunoby",
+      "DGreen",
+      "Holmgren",
+      "AmenThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "LDort",
+      "Gobert",
+      "EMobley",
+      "CWallace",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "taylor",
+    "first": [
+      "SBarnes",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "SCastle",
+      "donovan clingan",
+      "EMobley",
+      "AmenThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "termine",
+    "first": [
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "SCastle",
+      "AmenThompson",
+      "AThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "tranquillo",
+    "first": [
+      "DDaniels",
+      "AThompson",
+      "CWallace",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "SBarnes",
+      "SCastle",
+      "Holmgren",
+      "EMobley",
+      "AmenThompson"
+    ]
+  },
+  {
+    "voter_id": "van_gundy",
+    "first": [
+      "SBarnes",
+      "DGreen",
+      "AmenThompson",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "SCastle",
+      "DDaniels",
+      "KDunn",
+      "Gobert",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "vardon",
+    "first": [
+      "DDaniels",
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama"
+    ],
+    "second": [
+      "SBarnes",
+      "LDort",
+      "DGreen",
+      "EMobley",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "walker",
+    "first": [
+      "SBarnes",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "Gobert",
+      "AmenThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "washburn",
+    "first": [
+      "JDuren",
+      "DGreen",
+      "Holmgren",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "jaden mcdaniels",
+      "EMobley",
+      "AmenThompson"
+    ]
+  },
+  {
+    "voter_id": "wilbon",
+    "first": [
+      "OGAnunoby",
+      "Gobert",
+      "Holmgren",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "SBarnes",
+      "SCastle",
+      "AThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "windhorst",
+    "first": [
+      "BAdebayo",
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "Wembanyama"
+    ],
+    "second": [
+      "OGAnunoby",
+      "TCamara",
+      "AThompson",
+      "CWallace",
+      "DWhite"
+    ]
+  },
+  {
+    "voter_id": "wolstat",
+    "first": [
+      "SBarnes",
+      "Gobert",
+      "Holmgren",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "AmenThompson",
+      "AThompson",
+      "CWallace"
+    ]
+  },
+  {
+    "voter_id": "mc_wright",
+    "first": [
+      "SBarnes",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "SCastle",
+      "KDunn",
+      "Gobert"
+    ]
+  },
+  {
+    "voter_id": "zillgitt",
+    "first": [
+      "Gobert",
+      "Holmgren",
+      "AThompson",
+      "Wembanyama",
+      "DWhite"
+    ],
+    "second": [
+      "BAdebayo",
+      "OGAnunoby",
+      "TCamara",
+      "DDaniels",
+      "CWallace"
+    ]
+  }
+]
