@@ -51,10 +51,25 @@ html, body, #root {
 
 @media (max-width: 640px) {
   /* Reduce page padding */
-  main { padding: 20px 14px !important; }
+  main { padding: 16px 12px !important; }
 
   /* Page titles */
   h1 { font-size: 22px !important; }
+
+  /* Stack flex rows vertically on mobile */
+  .mobile-stack {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+  }
+  .mobile-stack .ml-auto { margin-left: 0 !important; }
+
+  /* Award/stat button groups: wrap on mobile */
+  .award-btns { flex-wrap: wrap !important; }
+
+  /* Reduce large card padding */
+  .card-pad { padding: 16px !important; }
+  .card-pad-x { padding-left: 16px !important; padding-right: 16px !important; }
 
   /* Voter Explorer layout: stack sidebar above table */
   .voter-layout { flex-direction: column !important; gap: 12px !important; }
@@ -62,12 +77,9 @@ html, body, #root {
   .voter-filter-toggle { display: block !important; }
   .hide-on-mobile { display: none !important; }
 
-  /* Card grids: single column */
-  .stats-grid { grid-template-columns: 1fr !important; }
-
-  /* Scatter chart: shorter on mobile */
-  .recharts-wrapper { height: 300px !important; }
+  /* Hide vote count boxes on mobile (info is in the bar) */
+  .vote-counts { display: none !important; }
 
   /* Nav brand text smaller */
-  nav span[style*="monospace"] { font-size: 12px !important; margin-right: 12px !important; }
+  nav span[style*="monospace"] { font-size: 11px !important; margin-right: 10px !important; }
 }

@@ -48,8 +48,8 @@ const DEF_STAT_DESCRIPTIONS: Record<DefStatKey, string> = {
 const AWARD_LABELS: Record<Award, string> = {
   mvp: 'MVP',
   allnba: 'All-NBA',
-  dpoy: 'Def. Player of the Year',
-  alldef: 'All-Defensive',
+  dpoy: 'DPOY',
+  alldef: 'All-Def',
 };
 
 const VOTE_LABELS: Record<Award, string> = {
@@ -210,14 +210,14 @@ export default function StatsScatter() {
   return (
     <div>
       {/* Award toggle */}
-      <div className="flex items-center gap-4 mb-6">
+      <div className="mobile-stack flex items-center gap-4 mb-6">
         <div>
           <h3 style={{ fontSize: 18, fontWeight: 700 }}>Stats vs. Vote Points</h3>
           <p style={{ color: 'var(--text-secondary)', fontSize: 13, marginTop: 4 }}>
             Select an award and statistic. Points further from the regression line received more or fewer votes than their stats suggest.
           </p>
         </div>
-        <div className="flex gap-2 ml-auto">
+        <div className="award-btns flex gap-2 ml-auto">
           {(Object.keys(AWARD_LABELS) as Award[]).map(a => (
             <button key={a} onClick={() => setAward(a)} style={{
               padding: '6px 14px', borderRadius: 8,
@@ -234,7 +234,7 @@ export default function StatsScatter() {
       </div>
 
       {/* Stat selector + description */}
-      <div className="flex items-center gap-4 mb-4">
+      <div className="mobile-stack flex items-center gap-4 mb-4">
         <div style={{
           flex: 1, background: 'var(--surface-2)', border: '1px solid var(--border)', borderRadius: 8,
           padding: '10px 14px', fontSize: 13, color: 'var(--text-secondary)',
@@ -245,6 +245,7 @@ export default function StatsScatter() {
         </div>
         {isOffensive ? (
           <select value={offStat} onChange={e => setOffStat(e.target.value as OffStatKey)}
+            className="mobile-full"
             style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 8, padding: '8px 14px', color: 'var(--text-primary)', fontSize: 13, outline: 'none', cursor: 'pointer', flexShrink: 0 }}>
             {(Object.entries(OFF_STAT_LABELS) as [OffStatKey, string][]).map(([key, label]) => (
               <option key={key} value={key}>{label}</option>
@@ -252,6 +253,7 @@ export default function StatsScatter() {
           </select>
         ) : (
           <select value={defStat} onChange={e => setDefStat(e.target.value as DefStatKey)}
+            className="mobile-full"
             style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 8, padding: '8px 14px', color: 'var(--text-primary)', fontSize: 13, outline: 'none', cursor: 'pointer', flexShrink: 0 }}>
             {(Object.entries(DEF_STAT_LABELS) as [DefStatKey, string][]).map(([key, label]) => (
               <option key={key} value={key}>{label}</option>

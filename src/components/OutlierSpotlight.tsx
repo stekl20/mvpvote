@@ -42,7 +42,7 @@ export default function OutlierSpotlight({ award }: { award: Award }) {
 
   return (
     <div>
-      <div className="flex items-center gap-4 mb-6">
+      <div className="mobile-stack flex items-center gap-4 mb-6">
         <div>
           <h3 style={{ fontSize: 18, fontWeight: 700 }}>Most Distinctive {AWARD_LABELS[award]} Ballots</h3>
           <p style={{ color: 'var(--text-secondary)', fontSize: 13, marginTop: 4 }}>

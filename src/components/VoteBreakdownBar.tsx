@@ -36,7 +36,7 @@ export default function VoteBreakdownBar({ player, votes, totalVoters, maxPoints
         <span
           onClick={onNameClick}
           style={{
-            fontWeight: 600, fontSize: 15, width: 220,
+            fontWeight: 600, fontSize: 15, minWidth: 80, flex: '1 1 auto', maxWidth: 220,
             cursor: onNameClick ? 'pointer' : 'default',
             color: isSelected ? 'var(--accent)' : 'var(--text-primary)',
             borderBottom: onNameClick ? `1px dashed ${isSelected ? 'var(--accent)' : 'var(--border)'}` : 'none',
@@ -45,8 +45,8 @@ export default function VoteBreakdownBar({ player, votes, totalVoters, maxPoints
         >
           {player} <span style={{ fontSize: 10, opacity: 0.6 }}>{isSelected ? '▲' : '▼'}</span>
         </span>
-        <span style={{ color: 'var(--highlight)', fontFamily: 'monospace', fontWeight: 700, fontSize: 14, width: 60 }}>
-          {totalPoints} pts
+        <span style={{ color: 'var(--highlight)', fontFamily: 'monospace', fontWeight: 700, fontSize: 14, flexShrink: 0 }}>
+          {totalPoints}pts
         </span>
         <div className="flex-1 relative h-7 rounded overflow-hidden" style={{ background: 'var(--border)' }}>
           {segments.map((seg, i) => {
@@ -79,7 +79,7 @@ export default function VoteBreakdownBar({ player, votes, totalVoters, maxPoints
             );
           })}
         </div>
-        <div className="flex gap-3 ml-2">
+        <div className="vote-counts flex gap-3 ml-2">
           {activeKeys.map((key, i) => (
             <div key={key} className="text-center" style={{ width: 28 }}>
               <div style={{ color: activeColors[i], fontWeight: 700, fontSize: 13 }}>{votes[key] || 0}</div>

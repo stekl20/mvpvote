@@ -12,6 +12,12 @@ type Award = 'mvp' | 'coy' | 'dpoy';
 
 const AWARD_LABELS: Record<Award, string> = {
   mvp: 'MVP',
+  coy: 'COY',
+  dpoy: 'DPOY',
+};
+
+const AWARD_FULL: Record<Award, string> = {
+  mvp: 'MVP',
   coy: 'Coach of the Year',
   dpoy: 'Def. Player of the Year',
 };
@@ -44,9 +50,9 @@ export default function Distribution() {
 
   return (
     <div style={{ maxWidth: 1000, margin: '0 auto' }}>
-      <div className="flex items-center gap-4 mb-8">
+      <div className="mobile-stack flex items-center gap-4 mb-8">
         <h1 style={{ fontSize: 28, fontWeight: 800 }}>Vote Breakdown</h1>
-        <div className="flex gap-2 ml-auto">
+        <div className="award-btns flex gap-2 ml-auto">
           {(Object.keys(AWARD_LABELS) as Award[]).map(a => (
             <button
               key={a}
@@ -69,15 +75,15 @@ export default function Distribution() {
       </div>
 
       <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 12, overflow: 'hidden', marginBottom: 32 }}>
-        <div style={{ padding: '28px 32px 20px' }}>
-          <h3 style={{ fontSize: 18, fontWeight: 700 }}>{AWARD_LABELS[award]} — Vote Distribution</h3>
+        <div className="card-pad" style={{ padding: '28px 32px 20px' }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700 }}>{AWARD_FULL[award]} — Vote Distribution</h3>
           <p style={{ color: 'var(--text-secondary)', fontSize: 13, marginTop: 4 }}>
             Click a player name to see who voted for them, where they work, and where they're based.
           </p>
         </div>
         {displayed.map((row, i) => (
           <div key={row.player}>
-            <div style={{ padding: '0 32px' }}>
+            <div className="card-pad-x" style={{ padding: '0 32px' }}>
               <VoteBreakdownBar
                 player={row.player}
                 votes={row.votes}
@@ -100,7 +106,7 @@ export default function Distribution() {
         <div style={{ height: 8 }} />
       </div>
 
-      <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 12, padding: '28px 32px' }}>
+      <div className="card-pad" style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 12, padding: '28px 32px' }}>
         <OutlierSpotlight award={award} />
       </div>
     </div>
