@@ -165,9 +165,16 @@ export default function VoterTable() {
         <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
           <thead>
             <tr style={{ borderBottom: '1px solid var(--border)' }}>
-              {['Name', 'Outlet', 'Type', 'Location', 'MVP #1', 'MVP #2', 'MVP #3', ''].map(h => (
-                <th key={h} style={{ padding: '10px 12px', textAlign: 'left', color: 'var(--text-secondary)', fontSize: 11, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-                  {h}
+              {[
+                { label: 'Name' }, { label: 'Outlet' }, { label: 'Type' },
+                { label: 'Location', cls: 'hide-col-mobile' },
+                { label: 'MVP #1' },
+                { label: 'MVP #2', cls: 'hide-col-mobile' },
+                { label: 'MVP #3', cls: 'hide-col-mobile' },
+                { label: '' },
+              ].map(({ label, cls }) => (
+                <th key={label} className={cls} style={{ padding: '10px 12px', textAlign: 'left', color: 'var(--text-secondary)', fontSize: 11, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                  {label}
                 </th>
               ))}
             </tr>
@@ -202,12 +209,12 @@ export default function VoterTable() {
                         {voter.outlet_category}
                       </span>
                     </td>
-                    <td style={{ padding: '10px 12px', color: 'var(--text-secondary)', fontSize: 12 }}>
+                    <td className="hide-col-mobile" style={{ padding: '10px 12px', color: 'var(--text-secondary)', fontSize: 12 }}>
                       {voter.location_city}{voter.location_state ? `, ${voter.location_state}` : ''}{voter.location_country !== 'USA' ? ` (${voter.location_country})` : ''}
                     </td>
                     <td style={{ padding: '10px 12px', color: 'var(--rank-1)', fontWeight: 600 }}>{mvp?.first ?? '—'}</td>
-                    <td style={{ padding: '10px 12px', color: 'var(--rank-2)' }}>{mvp?.second ?? '—'}</td>
-                    <td style={{ padding: '10px 12px', color: 'var(--rank-3)' }}>{mvp?.third ?? '—'}</td>
+                    <td className="hide-col-mobile" style={{ padding: '10px 12px', color: 'var(--rank-2)' }}>{mvp?.second ?? '—'}</td>
+                    <td className="hide-col-mobile" style={{ padding: '10px 12px', color: 'var(--rank-3)' }}>{mvp?.third ?? '—'}</td>
                     <td style={{ padding: '10px 12px', color: 'var(--text-secondary)', fontSize: 12, textAlign: 'right' }}>
                       {isExpanded ? '▲' : '▼'}
                     </td>
@@ -246,7 +253,7 @@ const RANK_COLORS = ['var(--rank-1)', 'var(--rank-2)', 'var(--rank-3)', 'var(--r
 
 function BallotColumn({ label, picks }: { label: string; picks: string[] | null }) {
   return (
-    <div style={{ minWidth: 110 }}>
+    <div className="ballot-col" style={{ minWidth: 110 }}>
       <p style={{ color: 'var(--text-secondary)', fontSize: 10, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 8 }}>
         {label}
       </p>
@@ -262,7 +269,7 @@ function BallotColumn({ label, picks }: { label: string; picks: string[] | null 
 
 function TeamColumn({ label, color, picks }: { label: string; color: string; picks: string[] | null }) {
   return (
-    <div style={{ minWidth: 130 }}>
+    <div className="team-col" style={{ minWidth: 130 }}>
       <p style={{ color, fontSize: 10, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 8 }}>
         {label}
       </p>
@@ -277,13 +284,13 @@ function ExpandedBallot({ voter }: { voter: typeof voters[0] }) {
   const { mvp, dpoy, coy, allnba, alldef } = getBallot(voter.id);
 
   return (
-    <div style={{ background: 'var(--surface-2)', padding: '16px 24px 20px', borderBottom: '1px solid var(--border)' }}>
+    <div className="expanded-ballot" style={{ background: 'var(--surface-2)', padding: '16px 24px 20px', borderBottom: '1px solid var(--border)' }}>
       {/* Individual awards row */}
-      <div style={{ display: 'flex', gap: 36, flexWrap: 'wrap', marginBottom: 16 }}>
+      <div className="expanded-ballot-row" style={{ display: 'flex', gap: 36, flexWrap: 'wrap', marginBottom: 16 }}>
         <BallotColumn label="MVP Ballot" picks={mvp ? [mvp.first, mvp.second, mvp.third, mvp.fourth, mvp.fifth] : null} />
         <BallotColumn label="DPOY Ballot" picks={dpoy ? [dpoy.first, dpoy.second, dpoy.third] : null} />
         <BallotColumn label="COY Ballot" picks={coy ? [coy.first, coy.second, coy.third] : null} />
-        <div style={{ marginLeft: 'auto', textAlign: 'right' }}>
+        <div className="voter-info-col" style={{ marginLeft: 'auto', textAlign: 'right' }}>
           {(voter as any).twitter && (
             <a href={`https://twitter.com/${(voter as any).twitter.replace('@', '')}`} target="_blank" rel="noopener noreferrer"
               style={{ color: 'var(--accent)', fontSize: 12, textDecoration: 'none' }}
@@ -305,11 +312,11 @@ function ExpandedBallot({ voter }: { voter: typeof voters[0] }) {
         <p style={{ color: 'var(--text-secondary)', fontSize: 10, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 10 }}>
           Team Selections
         </p>
-        <div style={{ display: 'flex', gap: 32, flexWrap: 'wrap' }}>
+        <div className="expanded-teams-row" style={{ display: 'flex', gap: 32, flexWrap: 'wrap' }}>
           <TeamColumn label="All-NBA 1st" color="var(--rank-1)" picks={allnba?.first ?? null} />
           <TeamColumn label="All-NBA 2nd" color="var(--rank-2)" picks={allnba?.second ?? null} />
           <TeamColumn label="All-NBA 3rd" color="var(--rank-3)" picks={allnba?.third ?? null} />
-          <div style={{ width: 1, background: 'var(--border)' }} />
+          <div className="expanded-divider" style={{ width: 1, background: 'var(--border)' }} />
           <TeamColumn label="All-Defense 1st" color="var(--rank-1)" picks={alldef?.first ?? null} />
           <TeamColumn label="All-Defense 2nd" color="var(--rank-2)" picks={alldef?.second ?? null} />
         </div>

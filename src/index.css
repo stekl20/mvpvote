@@ -82,4 +82,15 @@ html, body, #root {
 
   /* Nav brand text smaller */
   nav span[style*="monospace"] { font-size: 11px !important; margin-right: 10px !important; }
+
+  /* Hide less-important table columns on mobile */
+  .hide-col-mobile { display: none !important; }
+
+  /* Expanded ballot: grid layout so all columns fit in viewport */
+  .expanded-ballot { padding: 12px 14px 16px !important; overflow: hidden !important; }
+  .expanded-ballot-row { display: grid !important; grid-template-columns: repeat(3, 1fr) !important; gap: 10px !important; margin-bottom: 12px !important; }
+  .expanded-teams-row { display: grid !important; grid-template-columns: repeat(3, 1fr) !important; gap: 10px !important; }
+  .ballot-col, .team-col { min-width: 0 !important; }
+  .voter-info-col { display: none !important; }
+  .expanded-divider { display: none !important; }
 }

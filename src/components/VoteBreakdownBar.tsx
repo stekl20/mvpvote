@@ -30,13 +30,16 @@ export default function VoteBreakdownBar({ player, votes, totalVoters, maxPoints
   })).filter(s => s.count > 0);
 
   return (
-    <div style={{ borderBottom: isSelected ? 'none' : '1px solid var(--border)', padding: '16px 0' }}>
-      <div className="flex items-center gap-4 mb-2">
-        <span style={{ color: 'var(--text-secondary)', fontSize: 12, width: 24, textAlign: 'right' }}>#{rank}</span>
+    <div style={{ borderBottom: isSelected ? 'none' : '1px solid var(--border)', padding: '14px 0' }}>
+      {/* Row 1: rank · name · points · vote counts */}
+      <div className="flex items-center gap-2 mb-2">
+        <span style={{ color: 'var(--text-secondary)', fontSize: 12, width: 24, textAlign: 'right', flexShrink: 0 }}>
+          #{rank}
+        </span>
         <span
           onClick={onNameClick}
           style={{
-            fontWeight: 600, fontSize: 15, minWidth: 80, flex: '1 1 auto', maxWidth: 220,
+            fontWeight: 600, fontSize: 15, flex: 1, minWidth: 0,
             cursor: onNameClick ? 'pointer' : 'default',
             color: isSelected ? 'var(--accent)' : 'var(--text-primary)',
             borderBottom: onNameClick ? `1px dashed ${isSelected ? 'var(--accent)' : 'var(--border)'}` : 'none',
@@ -48,7 +51,19 @@ export default function VoteBreakdownBar({ player, votes, totalVoters, maxPoints
         <span style={{ color: 'var(--highlight)', fontFamily: 'monospace', fontWeight: 700, fontSize: 14, flexShrink: 0 }}>
           {totalPoints}pts
         </span>
-        <div className="flex-1 relative h-7 rounded overflow-hidden" style={{ background: 'var(--border)' }}>
+        <div className="vote-counts flex gap-3 ml-1">
+          {activeKeys.map((key, i) => (
+            <div key={key} className="text-center" style={{ width: 28 }}>
+              <div style={{ color: activeColors[i], fontWeight: 700, fontSize: 13 }}>{votes[key] || 0}</div>
+              <div style={{ color: 'var(--text-secondary)', fontSize: 10 }}>{activeLabels[i]}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Row 2: bar — full width, indented past rank number */}
+      <div style={{ paddingLeft: 32 }}>
+        <div className="relative rounded overflow-hidden" style={{ height: 22, background: 'var(--border)' }}>
           {segments.map((seg, i) => {
             const left = segments.slice(0, i).reduce((acc, s) => acc + s.pct, 0) * (barPct / 100);
             const width = seg.pct * (barPct / 100);
@@ -59,18 +74,10 @@ export default function VoteBreakdownBar({ player, votes, totalVoters, maxPoints
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 0.6, delay: i * 0.08, ease: 'easeOut' }}
                 style={{
-                  position: 'absolute',
-                  left: `${left}%`,
-                  width: `${width}%`,
-                  height: '100%',
-                  background: seg.color,
-                  transformOrigin: 'left',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: 11,
-                  fontWeight: 600,
-                  color: '#0a0a0f',
+                  position: 'absolute', left: `${left}%`, width: `${width}%`, height: '100%',
+                  background: seg.color, transformOrigin: 'left',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  fontSize: 10, fontWeight: 600, color: '#0a0a0f',
                 }}
                 title={`${seg.label}: ${seg.count} votes`}
               >
@@ -78,14 +85,6 @@ export default function VoteBreakdownBar({ player, votes, totalVoters, maxPoints
               </motion.div>
             );
           })}
-        </div>
-        <div className="vote-counts flex gap-3 ml-2">
-          {activeKeys.map((key, i) => (
-            <div key={key} className="text-center" style={{ width: 28 }}>
-              <div style={{ color: activeColors[i], fontWeight: 700, fontSize: 13 }}>{votes[key] || 0}</div>
-              <div style={{ color: 'var(--text-secondary)', fontSize: 10 }}>{activeLabels[i]}</div>
-            </div>
-          ))}
         </div>
       </div>
     </div>
