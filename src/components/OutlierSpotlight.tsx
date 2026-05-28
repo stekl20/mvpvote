@@ -80,7 +80,7 @@ export default function OutlierSpotlight({ award }: { award: Award }) {
                       distance: <span style={{ color: 'var(--accent)', fontFamily: 'monospace', fontWeight: 700 }}>{deviation}</span>
                     </span>
                   </div>
-                  <div style={{ display: 'grid', gridTemplateColumns: `repeat(${rankKeys.length}, 1fr)`, gap: 8 }}>
+                  <div style={{ display: 'flex', gap: 8, overflowX: 'auto', paddingBottom: 4 }}>
                     {rankKeys.map((key, i) => {
                       const pick = ballot[key];
                       const voterRank = i + 1;
@@ -93,7 +93,8 @@ export default function OutlierSpotlight({ award }: { award: Award }) {
                           border: `1px solid ${isDistinctive ? 'var(--highlight)' : 'var(--border)'}`,
                           borderRadius: 6,
                           padding: '6px 10px',
-                          minWidth: 90,
+                          minWidth: 100,
+                          flexShrink: 0,
                         }}>
                           <div style={{ fontSize: 10, color: 'var(--text-secondary)', marginBottom: 2 }}>#{i + 1}</div>
                           <div style={{ fontSize: 13, fontWeight: isDistinctive ? 700 : 400, color: isDistinctive ? 'var(--highlight)' : 'var(--text-primary)' }}>

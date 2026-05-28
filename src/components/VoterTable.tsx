@@ -166,14 +166,16 @@ export default function VoterTable() {
           <thead>
             <tr style={{ borderBottom: '1px solid var(--border)' }}>
               {[
-                { label: 'Name' }, { label: 'Outlet' }, { label: 'Type' },
+                { label: 'Name' },
+                { label: 'Outlet', cls: 'hide-col-mobile' },
+                { label: 'Type', width: 95 },
                 { label: 'Location', cls: 'hide-col-mobile' },
-                { label: 'MVP #1' },
+                { label: 'MVP #1', width: 110 },
                 { label: 'MVP #2', cls: 'hide-col-mobile' },
                 { label: 'MVP #3', cls: 'hide-col-mobile' },
-                { label: '' },
-              ].map(({ label, cls }) => (
-                <th key={label} className={cls} style={{ padding: '10px 12px', textAlign: 'left', color: 'var(--text-secondary)', fontSize: 11, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                { label: '', width: 30 },
+              ].map(({ label, cls, width }) => (
+                <th key={label} className={cls} style={{ padding: '10px 12px', textAlign: 'left', color: 'var(--text-secondary)', fontSize: 11, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', ...(width ? { width } : {}) }}>
                   {label}
                 </th>
               ))}
@@ -197,8 +199,8 @@ export default function VoterTable() {
                     onMouseEnter={e => { if (!isExpanded) (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.03)'; }}
                     onMouseLeave={e => { if (!isExpanded) (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
                   >
-                    <td className="voter-cell-name" style={{ padding: '10px 12px', fontWeight: 500 }}>{voter.name}</td>
-                    <td style={{ padding: '10px 12px', color: 'var(--text-secondary)' }}>{voter.outlet}</td>
+                    <td className="voter-cell-name" style={{ padding: '10px 12px', fontWeight: 500, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{voter.name}</td>
+                    <td className="hide-col-mobile" style={{ padding: '10px 12px', color: 'var(--text-secondary)' }}>{voter.outlet}</td>
                     <td style={{ padding: '10px 12px' }}>
                       <span style={{
                         background: catColors[voter.outlet_category] + '22',

@@ -279,16 +279,19 @@ export default function StatsScatter() {
       )}
 
       <ResponsiveContainer width="100%" height={420}>
-        <ScatterChart margin={{ top: 20, right: 40, bottom: 40, left: 40 }}>
+        <ScatterChart margin={{ top: 20, right: 20, bottom: 40, left: 10 }}>
           <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
           <XAxis type="number" dataKey="x" domain={['auto', 'auto']}
             tick={{ fill: 'var(--text-secondary)', fontSize: 11 }}
+            tickFormatter={(v: number) => Number(v.toFixed(1)).toString()}
             tickLine={false} axisLine={{ stroke: 'var(--border)' }}>
             <Label value={currentStatLabel} offset={-10} position="insideBottom" fill="var(--text-secondary)" fontSize={12} />
           </XAxis>
           <YAxis type="number" dataKey="y" domain={[yDomainMin, yDomainMax]}
             tick={{ fill: 'var(--text-secondary)', fontSize: 11 }}
-            tickLine={false} axisLine={{ stroke: 'var(--border)' }}>
+            tickFormatter={(v: number) => Math.round(v).toString()}
+            tickLine={false} axisLine={{ stroke: 'var(--border)' }}
+            width={45}>
             <Label value={VOTE_LABELS[award]} angle={-90} position="insideLeft" fill="var(--text-secondary)" fontSize={12} />
           </YAxis>
           <Tooltip content={<CustomTooltip />} />

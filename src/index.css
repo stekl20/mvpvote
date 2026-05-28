@@ -97,5 +97,4 @@ html, body, #root {
   /* Table: fixed layout so it never exceeds viewport width */
   .voter-table-container { overflow-x: hidden !important; }
   .voter-table { table-layout: fixed !important; }
-  .voter-cell-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 0; }
 }
