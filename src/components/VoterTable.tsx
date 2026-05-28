@@ -148,7 +148,7 @@ export default function VoterTable() {
       </aside>
 
       {/* Table */}
-      <div className="flex-1 overflow-x-auto">
+      <div className="voter-table-container flex-1 overflow-x-auto">
         <div className="flex items-center justify-between" style={{ marginBottom: 10 }}>
           <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>{filtered.length} voters</span>
           <button
@@ -162,7 +162,7 @@ export default function VoterTable() {
             ↓ Download CSV
           </button>
         </div>
-        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
+        <table className="voter-table" style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
           <thead>
             <tr style={{ borderBottom: '1px solid var(--border)' }}>
               {[
@@ -197,7 +197,7 @@ export default function VoterTable() {
                     onMouseEnter={e => { if (!isExpanded) (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.03)'; }}
                     onMouseLeave={e => { if (!isExpanded) (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
                   >
-                    <td style={{ padding: '10px 12px', fontWeight: 500 }}>{voter.name}</td>
+                    <td className="voter-cell-name" style={{ padding: '10px 12px', fontWeight: 500 }}>{voter.name}</td>
                     <td style={{ padding: '10px 12px', color: 'var(--text-secondary)' }}>{voter.outlet}</td>
                     <td style={{ padding: '10px 12px' }}>
                       <span style={{

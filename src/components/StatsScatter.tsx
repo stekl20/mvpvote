@@ -235,14 +235,6 @@ export default function StatsScatter() {
 
       {/* Stat selector + description */}
       <div className="mobile-stack flex items-center gap-4 mb-4">
-        <div style={{
-          flex: 1, background: 'var(--surface-2)', border: '1px solid var(--border)', borderRadius: 8,
-          padding: '10px 14px', fontSize: 13, color: 'var(--text-secondary)',
-          display: 'flex', alignItems: 'flex-start', gap: 8,
-        }}>
-          <span style={{ color: 'var(--accent)', fontWeight: 700, flexShrink: 0 }}>{currentStatLabel}:</span>
-          <span>{currentDescription}</span>
-        </div>
         {isOffensive ? (
           <select value={offStat} onChange={e => setOffStat(e.target.value as OffStatKey)}
             className="mobile-full"
@@ -260,6 +252,14 @@ export default function StatsScatter() {
             ))}
           </select>
         )}
+        <div style={{
+          flex: 1, background: 'var(--surface-2)', border: '1px solid var(--border)', borderRadius: 8,
+          padding: '10px 14px', fontSize: 13, color: 'var(--text-secondary)',
+          display: 'flex', alignItems: 'flex-start', gap: 8,
+        }}>
+          <span style={{ color: 'var(--accent)', fontWeight: 700, flexShrink: 0 }}>{currentStatLabel}:</span>
+          <span>{currentDescription}</span>
+        </div>
       </div>
 
       {hasOutlier && (

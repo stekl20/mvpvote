@@ -80,7 +80,7 @@ export default function OutlierSpotlight({ award }: { award: Award }) {
                       distance: <span style={{ color: 'var(--accent)', fontFamily: 'monospace', fontWeight: 700 }}>{deviation}</span>
                     </span>
                   </div>
-                  <div className="flex gap-3 flex-wrap">
+                  <div style={{ display: 'grid', gridTemplateColumns: `repeat(${rankKeys.length}, 1fr)`, gap: 8 }}>
                     {rankKeys.map((key, i) => {
                       const pick = ballot[key];
                       const voterRank = i + 1;

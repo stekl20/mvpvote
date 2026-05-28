@@ -93,4 +93,9 @@ html, body, #root {
   .ballot-col, .team-col { min-width: 0 !important; }
   .voter-info-col { display: none !important; }
   .expanded-divider { display: none !important; }
+
+  /* Table: fixed layout so it never exceeds viewport width */
+  .voter-table-container { overflow-x: hidden !important; }
+  .voter-table { table-layout: fixed !important; }
+  .voter-cell-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 0; }
 }
